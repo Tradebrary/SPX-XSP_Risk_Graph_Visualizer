@@ -12,6 +12,12 @@ link never changes between versions.
 
 ---
 
+## v1.0.1 — Clean First-Run Experience (2026-06-11)
+
+- Fresh installations now start with an empty broker-accounts list — add your
+  own IB/Tastytrade accounts via Configuration (removed internal developer
+  account placeholders).
+
 ## v1.0.0 — First Stable Release (2026-06-10)
 
 Initial public release.
