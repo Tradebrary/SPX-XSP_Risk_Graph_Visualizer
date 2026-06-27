@@ -12,6 +12,25 @@ link never changes between versions.
 
 ---
 
+## v1.0.2 — Chart & Layout Refinements (2026-06-27)
+
+- Profit/loss shading fixed: the loss area below the zero line is now correctly
+  shaded red — including narrow regions such as butterflies — and the
+  profit/loss fills extend to the chart edges and stay filled when you zoom or
+  pan out.
+- The chart x-axis now shows real strike prices instead of fractional values,
+  and an empty chart opens on a sensible whole-number price range.
+- With no live SPX price, the chart centres on your position's strikes instead
+  of pushing it to one side.
+- Strategy selection buttons are arranged in two rows to take less horizontal
+  space.
+- Action buttons moved into the menu bar — File (Load/Save Strategy), Tools
+  (Intrinsic Value Calculator, Optimize), Clean Up (Clear Position, Clear All,
+  Reset Defaults), and Configuration.
+- Tighter spacing above the spread inputs for combo strategies, and a larger
+  default window so the full panel (through the POP section) is visible without
+  scrolling.
+
 ## v1.0.1 — Clean First-Run Experience (2026-06-11)
 
 - Fresh installations now start with an empty broker-accounts list — add your
