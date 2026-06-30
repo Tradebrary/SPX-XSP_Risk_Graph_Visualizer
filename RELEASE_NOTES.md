@@ -12,6 +12,12 @@ link never changes between versions.
 
 ---
 
+## v1.0.3 — Top P/L Scale Fix (2026-06-28)
+
+- Fixed the row of P/L values across the top of the chart disappearing after you
+  zoom or pan — it now re-renders at the correct tick positions for the current
+  view.
+
 ## v1.0.2 — Chart & Layout Refinements (2026-06-27)
 
 - Profit/loss shading fixed: the loss area below the zero line is now correctly
