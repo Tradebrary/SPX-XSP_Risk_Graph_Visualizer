@@ -12,6 +12,18 @@ link never changes between versions.
 
 ---
 
+## v1.0.4 — Streaming & Custom Combo Fixes (2026-07-01)
+
+- Fixed custom (multi-leg) combos showing an incorrect/stale P/L while
+  streaming: the chart now refreshes on every streaming update for Custom
+  strategies (previously the P/L could stay wrong even though the leg prices and
+  the strategy Total were correct).
+- Fetch Prices now streams the SPX and XSP underlying prices even with no
+  strategy selected — previously nothing streamed until a strategy/expiration
+  was chosen.
+- User Guide updated for the new menu bar (File / Tools / Clean Up /
+  Configuration); the former action buttons now live in these menus.
+
 ## v1.0.3 — Top P/L Scale Fix (2026-06-28)
 
 - Fixed the row of P/L values across the top of the chart disappearing after you
