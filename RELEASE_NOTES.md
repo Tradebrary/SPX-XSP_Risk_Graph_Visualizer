@@ -5,10 +5,11 @@ Release process (each release):
 2. `python build_all.py` (regenerates `version.iss` + both exes).
 3. Compile the installer: `ISCC.exe OptionsRiskGraph.iss` → `installer/OptionsRiskGraphSetup-<version>.exe`.
 4. Add an entry below, commit with message `v<version> <summary>` and tag `v<version>`.
-5. Create a GitHub Release for the tag and attach the installer exe (and these notes).
+5. Copy the new installer (replacing the old one), this file, and any changed PDFs
+   into `distribution/`, commit and tag it the same way, then push both repos.
 
-The Whop product page links to the permanent **Releases — latest** URL, so the
-link never changes between versions.
+The Whop product page links to the distribution repo; customers download it with
+**Code → Download ZIP**, so the link never changes between versions.
 
 ---
 
