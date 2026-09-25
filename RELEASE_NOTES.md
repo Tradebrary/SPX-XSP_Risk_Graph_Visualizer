@@ -12,6 +12,25 @@ link never changes between versions.
 
 ---
 
+## v1.0.5 — Hedge, Custom BPR & Save/Load Fixes (2026-09-25)
+
+- Additional XSP Hedge (Custom): each leg's ratio (×) now counts in the P/L,
+  chart and BPR — previously it only affected the Total, so a 1×2 ratio hedge
+  was graphed as a plain vertical spread.
+- Additional XSP Hedge (butterflies): the premium is no longer overstated by a
+  third — a $1.00 debit butterfly now shows its true $100 maximum loss (before
+  commissions) instead of $133.
+- Custom strategy BPR no longer counts the quantity twice (at quantity 2 it
+  showed double the real requirement), and a largest loss that sits exactly on
+  a strike (e.g. a short butterfly) is now measured exactly.
+- Save Strategy now saves the Additional XSP Hedge's Custom legs — previously a
+  reloaded Custom hedge kept whatever legs were on screen.
+- Load Strategy, relative mode: a price you type (when no live price is
+  available) now moves Custom legs too, re-centred Custom strikes land on valid
+  strikes (SPX multiples of 5), and files that contain only an Additional XSP
+  Hedge now ask for the price as well.
+- User Guide: updated the Custom strategy note (section 6.3).
+
 ## v1.0.4 — Streaming & Custom Combo Fixes (2026-07-01)
 
 - Fixed custom (multi-leg) combos showing an incorrect/stale P/L while
