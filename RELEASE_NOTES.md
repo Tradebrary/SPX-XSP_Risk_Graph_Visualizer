@@ -13,6 +13,21 @@ The Whop product page links to the distribution repo; customers download it with
 
 ---
 
+## v1.0.6 — Double Broken-Wing Butterfly & Tastytrade Fixes (2026-09-27)
+
+- New SPX strategy: **DBWB** (Double Broken-Wing Butterfly) — a call broken-wing
+  butterfly above the center plus a put one below, built from four inputs
+  (Center, Offset, W, Broken) with a single net price (+ credit / − debit).
+- Tastytrade: the login token is now renewed automatically. Previously, about
+  15 minutes after connecting, new requests failed with "Unauthorized" — which,
+  for example, saved option chains without any SPX data.
+- Save Chain now warns if SPX or XSP data couldn't be read from the broker, and
+  loading a CSV warns if the file has no SPX or XSP prices (instead of leaving
+  the prices silently red).
+- Fixed switching from Custom to Straddle or Strangle, which could fail to show
+  the strategy's inputs.
+- User Guide: added DBWB.
+
 ## v1.0.5 — Hedge, Custom BPR & Save/Load Fixes (2026-09-25)
 
 - Additional XSP Hedge (Custom): each leg's ratio (×) now counts in the P/L,
