@@ -7,6 +7,8 @@ you're comfortable holding to expiration. Plot combined P/L at expiration,
 drag strikes interactively, compute POP and expected value, stream live data
 from Tastytrade or Interactive Brokers, and optimize strategy parameters.
 
+More information: [tradebrary.com/spx-xsp-risk-graph-visualizer](https://tradebrary.com/spx-xsp-risk-graph-visualizer.html)
+
 **Purchase a license on Whop** — your license key is shown on your Whop
 membership page after purchase. One key activates on up to **two computers**
 you own (e.g., desktop + laptop).
