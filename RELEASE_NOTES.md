@@ -13,6 +13,21 @@ The Whop product page links to the distribution repo; customers download it with
 
 ---
 
+## v1.0.7 — Broken-Wing Butterflies, DBWB Optimizer & License Reliability (2026-10-16)
+
+- New strategies for SPX and XSP: **CBWB** (Call Broken-Wing Butterfly) and
+  **PBWB** (Put Broken-Wing Butterfly) — long 1 / short 2 / long 1 with a wider
+  far wing, set with three inputs (Near, W, Broken) and a single net price.
+- New **Tools → Optimize DBWB**: searches the Double Broken-Wing Butterfly's
+  center, offset, W, broken wing and quantity, scoring each combination like the
+  main Optimizer (which now links to it).
+- Licensing: if the license server or Whop is having an outage, a computer that
+  has already been activated now starts normally instead of asking for the key
+  again (as it already did when offline).
+- Save Strategy now asks for the SPX price when only an Additional XSP Hedge is
+  set and no live price is available, so the hedge's strikes are saved.
+- User Guide: added CBWB, PBWB and Optimize DBWB.
+
 ## v1.0.6 — Double Broken-Wing Butterfly & Tastytrade Fixes (2026-09-27)
 
 - New SPX strategy: **DBWB** (Double Broken-Wing Butterfly) — a call broken-wing
